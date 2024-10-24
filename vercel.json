@@ -1,6 +1,16 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)","destination": "/" }
-  ]
+"version": 2,
+"public": true,
+"builds": [
+{
+"src": "spotify.html",
+"use": "@vercel/static"
+}
+],
+"routes": [
+{
+"src": "/(.*)",
+"dest": "/spotify.html"
+}
+]
 }
